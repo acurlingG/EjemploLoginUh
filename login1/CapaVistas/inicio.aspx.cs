@@ -16,7 +16,7 @@ namespace login1.CapaVistas
             {
                 if (string.IsNullOrEmpty(cls_usuario.nombre))
                 {
-                    Response.Redirect("Login.aspx");
+                    Response.Redirect("Login1.aspx");
                 } else
                 {
                     lblUsuario.Text = "Bienvenido, " + cls_usuario.nombre;
@@ -29,7 +29,7 @@ namespace login1.CapaVistas
             cls_usuario.clave = string.Empty;
             cls_usuario.correo = string.Empty;
             cls_usuario.nombre = string.Empty;
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Login1.aspx");
         }
     }
 }
